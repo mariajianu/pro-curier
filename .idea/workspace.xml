@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="316cc974-76de-416d-a7ff-bf4d71858d04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Buyer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Courier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Seller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/CourierRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Courier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-model/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-model/src/main/java/module-info.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,37 +21,46 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-model/src/main/java/module-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+            <state relative-caret-position="34">
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/OrderRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-model/pom.xml">
+        <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/CourierRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/Repository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,9 +119,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Courier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="170">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
+                <element signature="e#740#741#0" expanded="true" />
                 <element signature="e#650#651#0" expanded="true" />
                 <element signature="e#684#685#0" expanded="true" />
                 <element signature="e#724#725#0" expanded="true" />
@@ -127,13 +136,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+            <state relative-caret-position="194">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
                 <element signature="e#927#928#0" expanded="true" />
                 <element signature="e#956#957#0" expanded="true" />
                 <element signature="e#987#988#0" expanded="true" />
@@ -177,6 +187,7 @@
       <list>
         <option value="module-info" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -190,14 +201,17 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/core-modul/src/main/java/module-info.java" />
         <option value="$PROJECT_DIR$/core-modul/pom.xml" />
-        <option value="$PROJECT_DIR$/core-model/src/main/java/module-info.java" />
         <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Product.java" />
         <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Location.java" />
         <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Address.java" />
         <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Seller.java" />
         <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Buyer.java" />
-        <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Courier.java" />
         <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Order.java" />
+        <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Courier.java" />
+        <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/CourierRepository.java" />
+        <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/OrderRepository.java" />
+        <option value="$PROJECT_DIR$/core-model/src/main/java/module-info.java" />
+        <option value="$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/Repository.java" />
       </list>
     </option>
   </component>
@@ -263,6 +277,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="procurier-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="procurier-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="core-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -271,7 +295,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553184319877" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553185561329" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -356,13 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/module-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-model/src/main/java/Seller.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -430,11 +447,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Courier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="170">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
+            <element signature="e#740#741#0" expanded="true" />
             <element signature="e#650#651#0" expanded="true" />
             <element signature="e#684#685#0" expanded="true" />
             <element signature="e#724#725#0" expanded="true" />
@@ -447,22 +486,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/Order.java">
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        <state relative-caret-position="34">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/CourierRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/com/procurier/model/repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -8,13 +8,15 @@ import java.util.Objects;
 public class Order {
     private Seller seller;
     private Buyer buyer;
+    private Long id;
     private Courier courier;
     private Instant submittedTime;
     private Map<Product, Integer> orderLines;
 
 
-    public Order(Seller seller, Buyer buyer, Courier courier, Instant submittedTime,
+    public Order(Long id, Seller seller, Buyer buyer, Courier courier, Instant submittedTime,
                  Map<Product, Integer> orderLines) {
+        this.id = Objects.requireNonNull(id);
         this.seller = Objects.requireNonNull(seller);
         this.buyer = Objects.requireNonNull(buyer);
         this.courier = Objects.requireNonNull(courier);
@@ -22,8 +24,12 @@ public class Order {
         this.orderLines = Collections.unmodifiableMap(orderLines);
     }
 
-    public Order(Seller seller, Buyer buyer, Courier courier, Map<Product, Integer> orderLines) {
-        this(seller, buyer, courier, Instant.now(), orderLines);
+    public Order(Long id, Seller seller, Buyer buyer, Courier courier, Map<Product, Integer> orderLines) {
+        this(id, seller, buyer, courier, Instant.now(), orderLines);
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public Seller getSeller() {

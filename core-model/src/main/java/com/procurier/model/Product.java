@@ -1,7 +1,7 @@
 package com.procurier.model;
 import java.util.Objects;
 
-public class Product {
+public final class Product {
     private Long price;
     private String name;
     private String description;
@@ -11,9 +11,27 @@ public class Product {
         this.price = Objects.requireNonNull(price);
         this.name = Objects.requireNonNull(name);
         this.description = Objects.requireNonNull(description);
-        this.weight = Objects.requireNonNull(weight);
+        this.weight = checkWeigth(weight);
     }
-    public static void main(String[] args){
-        final Product product = new Product(12L, "name", "desc", 3L);
+
+    private static Long checkWeigth(Long weight){
+        if(weight < 0)
+            throw IllegalArgumentException("Weight must be non negative");
+        return Objects.requireNonNull(weight);
+    }
+    public Long getPrice() {
+        return price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Long getWeight() {
+        return weight;
     }
 }
